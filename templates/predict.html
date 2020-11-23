@@ -1,0 +1,19 @@
+<html>
+<body>
+<a href="/">back</a>
+<div class="container">
+<style>
+.container{
+justify-content: center;
+padding-top: 10vw;
+padding-left: 40vw;  
+}
+</style>
+<h2 style="font-size: 2rem" id ="pred" style="color:black">Predicted Class : <span style="font-weight: bold; color:black;">{{ label }}</span>
+</h2>
+<h2 style="font-size: 2rem">Accuracy : <span style="font-weight: bold; color:black;">{{prob}}%</span>
+</h2>
+<img style="widows: 30vw;height: 15vw;" class="pred_img" src="{{ url_for('send_file', filename=image_file_name)}}"/>   
+<script src="/static/script.js"></script>
+</body>
+</html>

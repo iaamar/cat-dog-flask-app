@@ -1,0 +1,17 @@
+<html>
+<style>
+.container{
+justify-content: center;
+padding-top: 10vw;
+padding-left: 10vw; 
+}
+</style>
+<body>
+    <div class="container">
+<form action="/predict" method="post" enctype="multipart/form-data" style="margin-top: 30px; width: 80%; text-align: center; margin: auto;"> 
+<input class="file-input" type="file" id="image" name = "image">
+<input type="submit" value="Classify" class="button is-black" name = "image" id="classify_button">
+</form>
+<script src="/static/script.js"></script>
+</body>
+</html>
