@@ -5,7 +5,7 @@ from flask import Flask, render_template, request, send_from_directory
 app = Flask(__name__)
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-UPLOAD_FOLDER = "uploads"
+UPLOAD_FOLDER = "upload"
 STATIC_FOLDER = "static"
 
 cnn_model = tf.keras.models.load_model(STATIC_FOLDER + "/models/" + "dog_cat_M.h5")
